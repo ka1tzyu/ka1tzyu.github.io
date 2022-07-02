@@ -1,0 +1,31 @@
+{
+  "name": "sushi-world",
+  "version": "1.0.0",
+  "description": "a simple sushi store",
+  "default": "index.html",
+  "repository": "https://github.com/nekovalue/sushi-world.git",
+  "author": "nekovalue <nekovalue@gmail.com>",
+  "license": "MIT",
+  "source": "src/index.html",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "scripts": {
+    "prestart": "rimraf dist",
+    "start": "parcel --open",
+    "prebuild": "rimraf dist",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@mischnic/parcel-namer-preserve-structure": "^0.2.0",
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
